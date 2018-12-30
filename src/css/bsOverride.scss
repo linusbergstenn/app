@@ -1,0 +1,45 @@
+$primary-color: #4285f4;
+$matte-black: #141414;
+$red: #db2727;
+$green: #27db48;
+
+.primary{
+    background-color: $primary-color;
+}
+.success{
+    background-color: $green;
+}
+.denied{
+    background-color: $red;
+}
+.dark{
+    background-color: $matte-black;
+}
+.btn-primary{
+    background-color: $primary-color;
+}
+.btn-success{
+    background-color: $green;
+}
+.btn-denied{
+    background-color: $red;
+}
+.bg-primary{
+    background-color: $primary-color;
+    color: $matte-black;
+}
+.bg-success{
+    background-color: $green;
+}
+.bg-denied{
+    background-color: $red;
+}
+.border-primary{
+    background-color: $primary-color;
+}
+.border-success{
+    background-color: $green;
+}
+.border-denied{
+    background-color: $red;
+}

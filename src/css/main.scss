@@ -1,0 +1,106 @@
+$primary-color: #4285f4;
+$matte-black: #141414;
+$red: #db2727;
+$green: #27db48;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Staatliches');
+
+
+#app-body{
+    font-size: 18px;
+    text-align: center;
+    height: 100vh;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: $matte-black;
+
+    .flex-container{
+        position: absolute;
+        top: 0; left:0;
+        justify-content: space-between;
+        width: 100vw;
+    }
+    header{
+        height: 100px;
+        text-transform: uppercase;
+        .menu-toggler{
+            padding-top: 10px;
+            cursor: pointer;
+        }
+        h1{
+            padding: 20px 0;
+            font-weight: 700;
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+
+    .form-holder{
+        *:focus{
+            border-color: rgba(66,133,244, .1)
+        }
+        text-align: left;
+        padding: 20px;
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .btn{
+            height: 50px;
+        }
+    }
+
+    .else-container{
+        width: 90%;
+        margin: 20px auto;
+        h1{
+            text-transform: uppercase;
+        }
+    }
+
+    .btn{
+        display: flex;
+        justify-content:center;
+    }
+    p{
+        font-size: 1.5rem;
+        margin-top: .2rem;
+    }
+   i{
+       font-size: 2rem;
+       margin-top: .4rem;
+       margin-left: 20px;
+   }
+
+   #calender-container{
+       min-height: 50vh;
+       justify-content: space-evenly;
+       }
+       div{
+           cursor: pointer;
+       }
+   }
+   #aktivitetsvy{
+    list-style-type: none;
+    overflow: hidden;
+        li{
+            display: flex;
+            flex-direction: row;
+            p{
+                flex-basis: 30%;
+                padding: 10px;
+            }
+        }
+    }
+.center{
+    margin: 0 auto;
+}
+.capital-letter{
+    text-transform: uppercase;
+}
+.hidden{
+    display: none !important;
+}
+.active{
+    color: $primary-color;
+}

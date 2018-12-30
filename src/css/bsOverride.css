@@ -1,0 +1,53 @@
+.primary {
+  background-color: #4285f4;
+}
+
+.success {
+  background-color: #27db48;
+}
+
+.denied {
+  background-color: #db2727;
+}
+
+.dark {
+  background-color: #141414;
+}
+
+.btn-primary {
+  background-color: #4285f4;
+}
+
+.btn-success {
+  background-color: #27db48;
+}
+
+.btn-denied {
+  background-color: #db2727;
+}
+
+.bg-primary {
+  background-color: #4285f4;
+  color: #141414;
+}
+
+.bg-success {
+  background-color: #27db48;
+}
+
+.bg-denied {
+  background-color: #db2727;
+}
+
+.border-primary {
+  background-color: #4285f4;
+}
+
+.border-success {
+  background-color: #27db48;
+}
+
+.border-denied {
+  background-color: #db2727;
+}
+/*# sourceMappingURL=bsOverride.css.map */

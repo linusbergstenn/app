@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Staatliches");
+#app-body {
+  font-size: 18px;
+  text-align: center;
+  height: 100vh;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  color: #141414;
+}
+
+#app-body .flex-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+}
+
+#app-body header {
+  height: 100px;
+  text-transform: uppercase;
+}
+
+#app-body header .menu-toggler {
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+#app-body header h1 {
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#app-body .form-holder {
+  text-align: left;
+  padding: 20px;
+}
+
+#app-body .form-holder *:focus {
+  border-color: rgba(66, 133, 244, 0.1);
+}
+
+#app-body .form-holder h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#app-body .form-holder .btn {
+  height: 50px;
+}
+
+#app-body .else-container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+#app-body .else-container h1 {
+  text-transform: uppercase;
+}
+
+#app-body .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#app-body p {
+  font-size: 1.5rem;
+  margin-top: .2rem;
+}
+
+#app-body i {
+  font-size: 2rem;
+  margin-top: .4rem;
+  margin-left: 20px;
+}
+
+#app-body #calender-container {
+  min-height: 50vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#app-body div {
+  cursor: pointer;
+}
+
+#aktivitetsvy {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+#aktivitetsvy li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#aktivitetsvy li p {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  padding: 10px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.capital-letter {
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.active {
+  color: #4285f4;
+}
+/*# sourceMappingURL=main.css.map */
