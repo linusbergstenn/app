@@ -3,7 +3,7 @@ class ApplicationView {
         this.parent = parent;
         this.content;
         
-        this.testViews();
+        this.onStart();
     }
     onStart(){
         
@@ -42,10 +42,6 @@ class ApplicationView {
     update(){
         this.parent.empty();
         this.content = new HomepageView(this.parent, 'översikt', 'home');
-    }
-
-    testViews(){
-        this.content = new AddActivityView(this.parent);
     }
 
 }
