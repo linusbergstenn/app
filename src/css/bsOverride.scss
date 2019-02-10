@@ -21,8 +21,11 @@ $green: #27db48;
 .btn-success{
     background-color: $green;
 }
-.btn-denied{
-    background-color: $red;
+.btn-danger{
+    background-color: $red !important;
+}
+.bg-black{
+    background-color: #141414;
 }
 .bg-primary{
     background-color: $primary-color;
@@ -32,7 +35,7 @@ $green: #27db48;
     background-color: $green;
 }
 .bg-denied{
-    background-color: $red;
+    background-color: $red !important;
 }
 .border-primary{
     background-color: $primary-color;

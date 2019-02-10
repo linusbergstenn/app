@@ -35,17 +35,25 @@ class AddActivityView {
 
         this.timeContainer.append(this.tCHeader, this.timeInputDOM);
 
+        
+
         this.mainDOM.append(this.headerDOM, this.inputContainer, this.timeContainer, this.transportDOM);
+        this.addActivityButton = new ButtonView(this.mainDOM, 'Lägg till aktivitet', 'plus', 'primary');
+        this.addActivityButton.buttonDOM.addClass('mt-4');
         this.parent.append(this.mainDOM);
     }
     _sliderValue(date){
         if(date.getHours() < 10){
             return '0'+(date.getHours() + 1 )+ ':' + date.getMinutes();
         }else{
-            return (date.getHours() + 1 ) + ':' + date.getMinutes();
+            if (date.getHours() == 23){
+                return '00' + ':' + date.getMinutes();
+            }else{
+                return (date.getHours() + 1 ) + ':' + date.getMinutes();
+            }
         }
     }
     _createRadioOption(icon){
-    return `<input type="radio"><i class="fas fa-${icon}"><i/>`
+    return `<input type="radio" name="transportation"><i class="fas fa-${icon}"><i/>`;
     }
 }

@@ -4,11 +4,11 @@ class CalendarView{
         this.parent = parent;
 
         this.mainDOM = $('<div>');
-        this.mainDOM.addClass('mt-3 container border border-secondary');
+        this.mainDOM.addClass('mt-3 container border border-secondary').attr('scroll-calendar');
         this.headerDOM = $('<h2>');
         this.headerDOM.addClass('p-4');
         this.calendarDOM = $('<div>');
-        this.calendarDOM.addClass('container d-flex').attr('id', 'calender-container');
+        this.calendarDOM.addClass('container d-flex flex-wrap').attr('id', 'calender-container');
 
         this.date = new Date();
         this.headerDOM.text((`Din vecka (v${this.date.getWeek()})`));
@@ -21,7 +21,6 @@ class CalendarView{
     createWeek(){
         let dayDIV;
         let activityDOM;
-        let activityCount;
         for(let i = 0; i < 7; i++){
             let model = new DayDatamodel(i);
             dayDIV = $('<div>');
@@ -29,11 +28,11 @@ class CalendarView{
             let pDOM = $('<p>');
 
             pDOM.addClass('border-bottom border-dark capital-letter');
-            if(this.date.getDayStringOf(i) === this.date.getDayString()){
+            if(this.date.getDayString() === this.date.getDayStringOf((i+1))){
                 pDOM.removeClass('border-dark');
                 pDOM.addClass('active border-primary');
             }
-            dayDIV.attr('id', 'weekDay' + i);
+            dayDIV.attr('id', 'weekDay-' +( i+1)).addClass('dayDIV');
             dayDIV.append(pDOM, activityDOM);
             pDOM.text(this.date.getDayStringOf(i));
             let activities = $('<p>');

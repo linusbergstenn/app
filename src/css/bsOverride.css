@@ -22,8 +22,12 @@
   background-color: #27db48;
 }
 
-.btn-denied {
-  background-color: #db2727;
+.btn-danger {
+  background-color: #db2727 !important;
+}
+
+.bg-black {
+  background-color: #141414;
 }
 
 .bg-primary {
@@ -36,7 +40,7 @@
 }
 
 .bg-denied {
-  background-color: #db2727;
+  background-color: #db2727 !important;
 }
 
 .border-primary {

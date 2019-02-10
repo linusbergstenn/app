@@ -2,8 +2,7 @@ class ApplicationView {
     constructor(parent){
         this.parent = parent;
         this.content;
-        
-        this.testViews();
+        this.onStart();
     }
     onStart(){
         
@@ -34,12 +33,10 @@ class ApplicationView {
         });
 
         $(this.content.ForwardButton.buttonDOM).on('click', () =>{
-            console.log('Forward2 clicked');
-            this.update();
-            
+            this.login(); 
         });
     }
-    update(){
+    login(){
         this.parent.empty();
         this.content = new HomepageView(this.parent, 'översikt', 'home');
     }
