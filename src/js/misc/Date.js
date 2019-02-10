@@ -25,12 +25,12 @@ Date.prototype.getWeek = function (dowOffset) {
         }
         return weeknum;
     }
-Date.prototype.getDayString = function(){
+Date.prototype.getDayString = () => {
     var weekDay = new Date().getDay();
     this.days = ['Mån', 'Tis', 'Ons', 'Tors', 'Fre', 'Lör', 'Sön'];
     return this.days[weekDay];
 }
-Date.prototype.getDayStringOf = function(day){
+Date.prototype.getDayStringOf = (day) =>{
     this.days = ['Mån', 'Tis', 'Ons', 'Tors', 'Fre', 'Lör', 'Sön'];
     return this.days[day];
 }

@@ -1,6 +1,6 @@
 class HeaderView{
     constructor(parent, title, bootstrapColor, menuToggler, icon){
-        
+        let menu = new MenuView(parent);
         this.mainDOM = $('<header>');
         this.absDOM = $('<div>');
         this.absDOM.addClass('flex-container d-flex inline-flex');
@@ -25,7 +25,12 @@ class HeaderView{
         parent.append(this.mainDOM);
 
         $(this.menuToggler).on('click', () => {
-            console.log('menuToggle clicked');
+            menu.mainDOM.toggleClass('hidden');
+            console.log('Öppnade menyn');
+        })
+        $(menu.closeMenu).on('click', () => {
+            menu.mainDOM.toggleClass('hidden');
+            console.log('Stängde menyn');
         })
     }
 }

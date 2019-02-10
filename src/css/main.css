@@ -6,6 +6,14 @@
   padding: 0;
   font-family: 'Roboto Mono', monospace;
   color: #141414;
+  position: relative;
+  overflow: hidden;
+}
+
+#app-body #map {
+  height: 85vh;
+  background-image: url("../../img/map.png");
+  background-size: cover;
 }
 
 #app-body .flex-container {
@@ -91,14 +99,27 @@
 
 #app-body div {
   cursor: pointer;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
 }
 
-#aktivitetsvy {
+.dayview {
+  position: relative;
+}
+
+.dayview #aktivitetsvy {
   list-style-type: none;
   overflow: hidden;
+  height: 40vh;
 }
 
-#aktivitetsvy li {
+.dayview #aktivitetsvy li {
+  text-align: left;
+  position: relative;
+  padding: 5px 0;
+}
+
+.dayview #aktivitetsvy li div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,12 +127,92 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#aktivitetsvy li p {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+.dayview #aktivitetsvy li div div {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.dayview #aktivitetsvy li .activity-pic {
+  width: 120px;
+  height: 120px;
+}
+
+.dayview #aktivitetsvy li p {
   padding: 10px;
+}
+
+.dayview #aktivitetsvy .remove-item {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #db2727;
+  font-size: 1.5rem;
+  z-index: 3;
+}
+
+#menu {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #141414;
+  background: #fff;
+  z-index: 2;
+  padding: 0;
+}
+
+#menu #closeMenu {
+  position: absolute !important;
+  top: 20px;
+  left: 10px;
+  color: #fff;
+}
+
+#menu #closeMenu img {
+  z-index: 200;
+}
+
+#menu #menuHeader {
+  height: 100px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#menu .cta-button {
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#menu .lowerMenubuttons {
+  position: absolute;
+  bottom: 20px;
+  width: 90vw;
+  margin: 0 15px;
 }
 
 .center {
